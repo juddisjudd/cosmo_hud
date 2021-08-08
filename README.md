@@ -24,6 +24,7 @@ rp-radio (optional)
 ## Thanks to
 https://forum.cfx.re/u/Antoine for the colored map.
 https://loading.io/progress/ for the loading-Bar library.
+https://github.com/zfbx/zseatbelt for the seatbelt.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
