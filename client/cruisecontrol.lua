@@ -18,8 +18,7 @@ function TriggerCruiseControl ()
       --CruisedSpeedMph = TransformToMph(CruisedSpeed) -- Comment me for km/h
       CruisedSpeedKm = TransformToKm(CruisedSpeed) -- Uncomment me for km/h
 
-      --QBCore.Functions.Notify("Cruise Activated: " .. CruisedSpeedMph ..  " MP/H") -- Comment me for km/h
-      QBCore.Functions.Notify("Cruise Activated: " .. CruisedSpeedKm ..  " km/h") -- Uncomment me for km/h
+      exports['mythic_notify']:DoHudText('inform', "Cruise Activated: " .. CruisedSpeedMph ..  " MP/H")
 
       Citizen.CreateThread(function ()
         while CruisedSpeed > 0 and IsInVehicle() == Player do
@@ -27,7 +26,7 @@ function TriggerCruiseControl ()
 
           if not IsTurningOrHandBraking() and GetVehiculeSpeed() < (CruisedSpeed - 1.5) then
             CruisedSpeed = 0
-            QBCore.Functions.Notify("Cruise Deactivated", "error")
+            exports['mythic_notify']:DoHudText('error', "Cruise Deactivated", "error")
             Wait(2000)
             break
           end
@@ -43,7 +42,7 @@ function TriggerCruiseControl ()
 
           if IsControlJustPressed(2, 72) then
             CruisedSpeed = 0
-            QBCore.Functions.Notify("Cruise Deactivated", "error")
+            exports['mythic_notify']:DoHudText('error', "Cruise Deactivated", "error")
             Wait(2000)
             break
           end
