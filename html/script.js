@@ -52,6 +52,15 @@ $(document).ready(function () {
     duration: 250,
     easing: "easeInOut",
   });
+  
+  StaminaIndicator = new ProgressBar.Circle("#StaminaIndicator", {
+    color: "rgb(28, 28, 28)",
+    trailColor: "rgb(243, 156, 18)",
+    strokeWidth: 10,
+    trailWidth: 6,
+    duration: 350,
+    easing: "easeInOut",
+  });
 
   Speedometer = new ProgressBar.Circle("#SpeedCircle", {
     color: "rgba(222, 222, 222, 1)",
@@ -92,6 +101,7 @@ window.addEventListener("message", function (event) {
     ThirstIndicator.animate(data.thirst / 100);
     StressIndicator.animate(data.stress / 100);
     OxygenIndicator.animate(data.oxygen / 100);
+    StaminaIndicator.animate(data.stamina / 100);
   }
 
   // Get current voice level and animate path
