@@ -42,7 +42,7 @@ function toggleSeatbelt(makeSound, toggle)
         else
             playSound("buckle")
             --SetFlyThroughWindscreenParams(10000.0, 10000.0, 17.0, 500.0);
-            SetFlyThroughWindscreenParams(15.6464, 2.2352, 0.0, 0.0);
+			SetFlyThroughWindscreenParams(15.6464, 2.2352, 0.0, 0.0);
 			SetPedConfigFlag(PlayerPedId(), 32, true);
         end
         seatbeltOn = not seatbeltOn
@@ -50,7 +50,7 @@ function toggleSeatbelt(makeSound, toggle)
         if toggle then
             playSound("buckle")
             --SetFlyThroughWindscreenParams(10000.0, 10000.0, 17.0, 500.0);
-            SetFlyThroughWindscreenParams(15.6464, 2.2352, 0.0, 0.0);
+			SetFlyThroughWindscreenParams(15.6464, 2.2352, 0.0, 0.0);
 			SetPedConfigFlag(PlayerPedId(), 32, true);
         else
             playSound("unbuckle")

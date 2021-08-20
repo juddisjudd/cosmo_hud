@@ -80,7 +80,7 @@ Citizen.CreateThread(function()
             thirst = thirst,
             stress = stress,
             oxygen = GetPlayerUnderwaterTimeRemaining(PlayerId()) * 10,
-            stamina = GetPlayerSprintStaminaRemaining(PlayerId()) * 1,
+			stamina = GetPlayerSprintStaminaRemaining(PlayerId()) * 1,
             talking = isTalking
         })
         if IsPauseMenuActive() then
@@ -111,6 +111,7 @@ Citizen.CreateThread(function()
                                 0.072, 0.162)
     SetMinimapComponentPosition('minimap_blur', 'L', 'B', -0.035, -0.03, 0.18,
                                 0.22)
+								ThefeedSpsExtendWidescreenOn()
     Wait(5000)
     SetRadarBigmapEnabled(true, false)
     Wait(0)

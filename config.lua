@@ -8,6 +8,7 @@ Config.UnitOfSpeed = "mph"  -- "kmh" or "mph"
 Config.UseRadio = true -- Shows headset icon instead of microphone if radio is on - REQUIRES "rp-radio"
 Config.ShowFuel = true -- Show fuel indicator
 Config.ShowBelt = true
+
 Config.fixedWhileBuckled = true
 Config.showUnbuckledIndicator = true
 
@@ -15,6 +16,8 @@ Config.ejectVelocity = (40 / 2.236936)
 Config.unknownEjectVelocity = (60 / 2.236936)
 
 Config.unknownModifier = 17.0
+
+Config.minDamage = 2000
 
 Config.playSound = true
 

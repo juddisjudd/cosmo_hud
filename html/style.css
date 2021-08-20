@@ -20,9 +20,9 @@ body {
   width: 4vh !important;
   height: 4vh !important;
   float: left;
-  margin: 0.3vh;
+  margin: 0.8vh;
   border-radius: 50%;
-  background: rgb(49, 49, 49);
+  background: rgb(24, 24, 24);
 }
 
 .fa-heart,
@@ -58,6 +58,10 @@ body {
   font-size: 1.8vh;
   left: 1.3vh;
   bottom: 1.13vh;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 2 2px 2px rgba(0, 0, 0, 1.0);
+  z-index: 100;
 }
 
 .fa-tint {
@@ -161,4 +165,9 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+svg {
+    width: 100%;
+    display: block;
 }
