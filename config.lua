@@ -12,7 +12,7 @@ Config.fixedWhileBuckled = true
 Config.showUnbuckledIndicator = true
 
 Config.ejectVelocity = (40 / 2.236936)
-Config.unknownEjectVelocity = (40 / 2.236936)
+Config.unknownEjectVelocity = (60 / 2.236936)
 
 Config.unknownModifier = 17.0
 
