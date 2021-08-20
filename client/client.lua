@@ -80,6 +80,7 @@ Citizen.CreateThread(function()
             thirst = thirst,
             stress = stress,
             oxygen = GetPlayerUnderwaterTimeRemaining(PlayerId()) * 10,
+            stamina = GetPlayerSprintStaminaRemaining(PlayerId()) * 1,
             talking = isTalking
         })
         if IsPauseMenuActive() then
