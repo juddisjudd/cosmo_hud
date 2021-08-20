@@ -52,6 +52,14 @@ body {
   bottom: 1.3vh;
 }
 
+.fa-running {
+  color: white;
+  position: absolute;
+  font-size: 1.8vh;
+  left: 1.3vh;
+  bottom: 1.13vh;
+}
+
 .fa-tint {
   color: white;
   position: absolute;
