@@ -2,6 +2,10 @@ Cosmo HUD from [nojdh](https://github.com/nojdh/cosmo_hud) with added seatbelt f
 
 This is for ESX.
 
+You may need to add this to server.cfg
+
+setr game_enableFlyThroughWindscreen true
+
 # Cosmo HUD
 
 Simple status HUD for FiveM and ESX inspired by NoPixel 3.0.
