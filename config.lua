@@ -4,7 +4,7 @@ Config.AlwaysShowRadar = false -- set to true if you always want the radar to sh
 Config.ShowStress = true -- set to true if you want a stress indicator
 Config.ShowSpeedo = true -- set to true if you want speedometer enabled
 Config.ShowVoice = true -- set to false if you want to hide mic indicator
-Config.UnitOfSpeed = "mph"  -- "kmh" or "mph"
+Config.UnitOfSpeed = "kmh"  -- "kmh" or "mph"
 Config.UseRadio = true -- Shows headset icon instead of microphone if radio is on - REQUIRES "rp-radio"
 Config.ShowFuel = true -- Show fuel indicator
 Config.ShowBelt = true
@@ -26,3 +26,22 @@ Config.volume = 0.25
 Config.passengerVolume = 0.20
 
 Config.playSoundForPassengers = true
+
+Config.Lang = {
+    ["cruison"] = "Cruise Activated: ",
+    ["cruisoff"] = "Cruise Deactivated"
+}
+
+
+function Notify(msg)
+
+    --[[
+    SetNotificationTextEntry('STRING')
+    AddTextComponentString(msg)
+    DrawNotification(0,1)
+    ]]
+
+    exports['mythic_notify']:SendAlert('inform', msg)
+    --exports['dopeNotify2']:Alert("", msg, 3500, 'info')
+
+end
