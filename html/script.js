@@ -1,8 +1,8 @@
 $(document).ready(function () {
   HealthIndicator = new ProgressBar.Circle("#HealthIndicator", {
-    color: "rgba(46, 204, 113,1.0)",
-    trailColor: "rgb(28, 28, 28)",
-    strokeWidth: 6,
+    color: "rgb(46, 204, 113)",
+    trailColor: "rgb(24, 24, 24)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
@@ -10,26 +10,26 @@ $(document).ready(function () {
 
   ArmorIndicator = new ProgressBar.Circle("#ArmorIndicator", {
     color: "rgb(201, 36, 36)",
-    trailColor: "rgb(28, 28, 28)",
-    strokeWidth: 6,
+    trailColor: "rgb(124, 30, 30)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
   });
 
   HungerIndicator = new ProgressBar.Circle("#HungerIndicator", {
-    color: "rgba(230, 126, 34,1.0)",
-    trailColor: "rgb(28, 28, 28)",
-    strokeWidth: 6,
+    color: "rgb(255, 164, 59)",
+    trailColor: "rgb(165, 116, 60)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
   });
 
   ThirstIndicator = new ProgressBar.Circle("#ThirstIndicator", {
-    color: "rgba(52, 152, 219,1.0)",
-    trailColor: "rgba(28, 28, 28)",
-    strokeWidth: 6,
+    color: "rgb(0, 140, 255)",
+    trailColor: "rgb(0, 85, 155)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
@@ -37,8 +37,8 @@ $(document).ready(function () {
 
   StressIndicator = new ProgressBar.Circle("#StressIndicator", {
     color: "rgb(255, 74, 104)",
-    trailColor: "rgba(28, 28, 28)",
-    strokeWidth: 6,
+    trailColor: "rgb(102, 27, 40)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
@@ -46,19 +46,19 @@ $(document).ready(function () {
 
   OxygenIndicator = new ProgressBar.Circle("#OxygenIndicator", {
     color: "rgb(0, 140, 255)",
-    trailColor: "rgba(28, 28, 28)",
-    strokeWidth: 6,
+    trailColor: "rgb(0, 85, 155)",
+    strokeWidth: 10,
     trailWidth: 10,
     duration: 250,
     easing: "easeInOut",
   });
   
   StaminaIndicator = new ProgressBar.Circle("#StaminaIndicator", {
-    color: "rgb(28, 28, 28)",
+    color: "rgb(24, 24, 24)",
     trailColor: "rgb(155, 89, 182)",
     strokeWidth: 10,
-    trailWidth: 6,
-    duration: 350,
+    trailWidth: 10,
+    duration: 250,
     easing: "easeInOut",
   });
 
@@ -81,10 +81,10 @@ $(document).ready(function () {
   });
 
   VoiceIndicator = new ProgressBar.Circle("#VoiceIndicator", {
-    color: "#4a4a4a",
-    trailColor: "rgba(28, 28, 28)",
-    strokeWidth: 6,
-    trailWidth: 10,
+    color: "rgb(24, 24, 24)",
+    trailColor: "#4a4a4a",
+    strokeWidth: 12,
+    trailWidth: 12,
     duration: 250,
     easing: "easeInOut",
   });

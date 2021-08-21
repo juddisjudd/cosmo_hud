@@ -23,6 +23,7 @@ body {
   margin: 0.8vh;
   border-radius: 50%;
   background: rgb(24, 24, 24);
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.8);
 }
 
 .fa-heart,
@@ -76,7 +77,7 @@ body {
   color: white;
   position: absolute;
   font-size: 1.6vh;
-  left: 1.4vh;
+  left: 1.45vh;
   bottom: 1.25vh;
   }
 
@@ -89,6 +90,7 @@ body {
   bottom: 5.6vh;
   background: rgba(27, 27, 27, 0.336);
   transform: rotate(-180deg);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 #SpeedIndicator {
@@ -102,6 +104,7 @@ body {
   text-align: center;
   text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
   transform: rotate(-180deg);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
 }
 #FuelCircle {
   width: 3vh !important;
@@ -111,6 +114,7 @@ body {
   bottom: 4.2vh;
   background: rgba(27, 27, 27, 0.336);
   transform: rotate(-180deg);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 #BeltCircle {
@@ -167,7 +171,4 @@ body {
   }
 }
 
-svg {
-    width: 100%;
-    display: block;
-}
+

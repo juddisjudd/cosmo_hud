@@ -782,7 +782,7 @@ out$.presets = presets = {
     "path": 'M50 10A40 40 0 0 1 50 90A40 40 0 0 1 50 10',
     "fill-dir": 'btt',
     "fill": '#25b',
-    "fill-background": '#ddd',
+    "fill-background": '#000',
     "fill-background-extrude": 3,
     "stroke-dir": 'normal',
     "stroke": '#25b',
