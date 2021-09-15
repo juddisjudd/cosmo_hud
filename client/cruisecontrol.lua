@@ -17,7 +17,8 @@ function TriggerCruiseControl ()
       CruisedSpeed = GetVehiculeSpeed()
       CruisedSpeedMph = TransformToMph(CruisedSpeed) -- Comment me for mp/h
 
-	  exports['dopeNotify2']:Alert("", "Cruise Activated: " .. CruisedSpeedKm ..  " km/h", 3500, 'info')
+
+       Notify(Config.Lang["cruison"].. CruisedSpeedKm .." km/h")
 
       Citizen.CreateThread(function ()
         while CruisedSpeed > 0 and IsInVehicle() == Player do
@@ -25,7 +26,7 @@ function TriggerCruiseControl ()
 
           if not IsTurningOrHandBraking() and GetVehiculeSpeed() < (CruisedSpeed - 1.5) then
             CruisedSpeed = 0
-			exports['dopeNotify2']:Alert("", "Cruise Deactivated", 3500, 'error')
+            Notify(Config.Lang["cruisoff"])
             Wait(2000)
             break
           end
@@ -41,7 +42,7 @@ function TriggerCruiseControl ()
 
           if IsControlJustPressed(2, 72) then
             CruisedSpeed = 0
-			exports['dopeNotify2']:Alert("", "Cruise Deactivated", 3500, 'error')
+            Notify(Config.Lang["cruisoff"])
             Wait(2000)
             break
           end
