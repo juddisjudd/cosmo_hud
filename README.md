@@ -32,3 +32,5 @@ https://github.com/zfbx/zseatbelt for the seatbelt.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P57KRR9)
